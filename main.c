@@ -3,17 +3,15 @@
 #include <time.h>
 #include "TP8.h"
 
-int main (){
-    int n = 0;
-    int demanderentier= 0;
-    printf("quel est l'entier \n");
-    scanf(" %d",&n);
-    int* tab = malloc(n *sizeof (int));
-    for (int i = 0; i < n ; ++i) {
-        printf("quel valeur sera dans votre case\n");
-        scanf("%d",&demanderentier);
-        tab[i]= demanderentier;
-    }
-    free(tab);
+void initialiser(int* pEntier, double* pReel) {
+    *pEntier = 0;
+    *pReel = 0.0;
+}
+int tp6ex1 (){
+    int entier;
+    double reel;
+    printf("%d %f\n", entier, reel);
+    initialiser(&entier, &reel);
+    printf("%d %f\n", entier, reel);
     return 0;
 }

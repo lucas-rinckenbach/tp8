@@ -133,3 +133,52 @@ int tp8ex5() {
 
     return 0;
 }
+int tp8ex2 () {
+    int compteur = 0;
+    int n = 0;
+    int somme = 0;
+    int moyenne = 0;
+
+    printf("combien de notes voulez vous entrez ? \n");
+    scanf("%d",&n);
+    int* tab = malloc(n *sizeof (int));
+
+    for (int i = 0; i < n; ++i) {
+        printf("entrez la note\n");
+
+        scanf("%d", &tab[i]);
+        compteur = compteur +1;
+        somme = somme + tab[i];
+
+    }
+    for (int i = 0; i < n ; ++i) {
+        printf("vos notes sont %d \n",tab[i] );
+    }
+    int i =0;
+
+    moyenne = somme / compteur ;
+    printf("la moyenne est de : %d", moyenne );
+
+
+
+    free(tab);
+    return 0 ;
+}
+int tp8ex1 (){
+    int n = 0;
+    int demanderentier= 0;
+    printf("quel est l'entier \n");
+    scanf(" %d",&n);
+    int* tab = malloc(n *sizeof (int));
+    for (int i = 0; i < n ; ++i) {
+        printf("quel valeur sera dans votre case\n");
+        scanf("%d",&demanderentier);
+        tab[i]= demanderentier;
+    }
+    free(tab);
+    return 0;
+}
+void initialiser(int* pEntier, double* pReel) {
+    *pEntier = 0;
+    *pReel = 0.0;
+}

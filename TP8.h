@@ -18,4 +18,7 @@ void afficherRectangles(Rectangle** rectangles, int tailleLogique);
 Rectangle* creerRectangle();
 void ajouterRectangle(Rectangle*** pRectangles, int* pTaillePhysique, int* pTailleLogique, Rectangle** pRectangleFavori);
 int tp8ex5();
+int tp8ex2 ();
+int tp8ex1 ();
+void initialiser(int* pEntier, double* pReel);
 #endif //TP8_TP8_H
